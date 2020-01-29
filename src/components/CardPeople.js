@@ -9,7 +9,6 @@ import {
     ButtonToggle,
     Collapse
 } from 'reactstrap'
-// import { faSpaceShuttle, faVideo } from '@fortawesome/free-solid-svg-icons'
 
 import CountBadge from './CountBadge'
 import images from '../services/images'
@@ -50,7 +49,7 @@ const CardPeople = ({ people, modal }) => {
     return (
         <Card className="border-0">
             {getImage() &&
-                <CardImg top src={getImage()} height="150px" alt={`Foto do personagem ${people.name}`} />
+                <CardImg top src={getImage()} height="150px" alt={`Picture people ${people.name}`} />
             }
             <ButtonToggle color="secondary" size="sm" onClick={toggle}>Toggle</ButtonToggle>
             <Collapse isOpen={isOpen}>

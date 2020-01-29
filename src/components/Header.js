@@ -9,7 +9,7 @@ import {
 
 const Header = () => {
     return (
-        <Navbar dark expand="md" light="true" className="mb-4">
+        <Navbar dark expand="md" className="mb-4">
             <Container>
                 <Badge color="secondary" href="/">
                     <h1>Star Wars</h1>

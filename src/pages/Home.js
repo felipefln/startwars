@@ -27,7 +27,6 @@ const Home = () => {
     function getPeoples(paginate) {
         return getPeople(paginate)
             .then(res => {
-                console.log(res)
                 const { results, count, next, previous } = res.data
                 setPeoples(results)
                 setPeoplesCount(count)
@@ -82,8 +81,7 @@ const Home = () => {
                             <Col>
                                 {nextPage &&
                                     <Button
-
-                                        color="warning"
+                                        color="secondary"
                                         className="float-right"
                                         onClick={() => getPeoples(nextPage)}
                                     >
@@ -93,7 +91,7 @@ const Home = () => {
                                 {previousPage &&
                                     <Button
                                         outline
-                                        color="warning"
+                                        color="secondary"
                                         className="float-right mr-2"
                                         onClick={() => getPeoples(previousPage)}
                                     >
